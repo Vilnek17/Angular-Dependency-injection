@@ -1,0 +1,7 @@
+<div class="body">
+    <h1> <b>User group: </b><span> {{developerRatingService.group}}</span></h1>
+    <div class="edit-body">
+        <input type="text"#inputElement placeholder="Write new group name">
+        <button class="network" (click)="!inputElement.value || developerRatingService.changeGroup(inputElement.value)">Edit</button>
+    </div>
+</div>
